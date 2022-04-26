@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PhoneBook">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="82dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/transfer"
+        android:onClick="BackToSecret"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="109dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/transfer"
+        android:onClick="MakeNewContact"
+        android:text="New Contact"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="143dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/transfer"
+        android:onClick="Delete"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvitems"
+        style="@android:style/Widget.DeviceDefault.Light.ListView.DropDown"
+        android:layout_width="201dp"
+        android:layout_height="595dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="140dp"
+        android:cacheColorHint="@color/white"
+        android:divider="@android:color/background_light"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:scrollbarThumbVertical="@color/white"
+        android:scrollbarTrackVertical="@android:color/white"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/gridi"
+        android:layout_width="206dp"
+        android:layout_height="589dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
